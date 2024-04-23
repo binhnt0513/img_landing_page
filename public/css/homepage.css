@@ -574,6 +574,8 @@
 @media (max-width: 600px) {
     .flex-container {
         display: unset;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .for-sp {
         display: block;
@@ -678,6 +680,18 @@
     }
     .about-section {
         padding-bottom: 60px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .max-width-1124 {
+        padding: 0;
+    }
+    .top-section__title-2 {
+        line-height: 32px;
+    }
+    .slider-section__group {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
