@@ -292,7 +292,7 @@
     padding-bottom: 40px;
 }
 .slider-section__label-span-underline {
-    background: linear-gradient(0deg, yellow 5px, transparent 7px) 0 45px;
+    background: linear-gradient(0deg, yellow 5px, transparent 7px);
     color: var(--lochmara);
     font-style: normal;
 }
@@ -421,8 +421,7 @@
 }
 
 .btn {
-    background-color: transparent;
-    position: absolute;
+    padding-top: 40px;
 }
 
 .dx {
@@ -507,27 +506,29 @@
 }
 
 .flex-container {
-    height: 550px;
-    display: flex;
-    flex-flow: column wrap;
+    /*height: 550px;*/
+    /*display: flex;*/
+    /*flex-flow: column wrap;*/
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    align-items: stretch;
 }
 
-.flex-container > * {
-    flex-grow: 1;
-    flex-shrink: 1;
-    /*flex-basis: 300px;*/
-}
+/*.flex-container > * {*/
+/*    flex-grow: 1;*/
+/*    flex-shrink: 1;*/
+/*    !*flex-basis: 300px;*!*/
+/*}*/
 
-.flex-item-1 {
-}
+/*.flex-item-1 {*/
+/*}*/
 
-.flex-item-2 {
-}
+/*.flex-item-2 {*/
+/*}*/
 
-.flex-item-3 {
-}
+/*.flex-item-3 {*/
+/*}*/
 
 .content-section {
     padding-top: 100px;
@@ -551,26 +552,29 @@
     .header-section {
         height: unset;
     }
-    .flex-container {
-        height: unset;
-    }
-    .flex-item-1, .flex-item-2, .flex-item-3 {
-        flex-basis: 183.333px;
-    }
+    /*.flex-container {*/
+    /*    height: unset;*/
+    /*}*/
+    /*.flex-item-1, .flex-item-2, .flex-item-3 {*/
+    /*    flex-basis: 183.333px;*/
+    /*}*/
 
-    .flex-item-1 {
-        order: 1;
-    }
+    /*.flex-item-1 {*/
+    /*    order: 1;*/
+    /*}*/
 
-    .flex-item-2 {
-        order: 3;
-    }
+    /*.flex-item-2 {*/
+    /*    order: 3;*/
+    /*}*/
 
-    .flex-item-3 {
-        order: 2;
-    }
+    /*.flex-item-3 {*/
+    /*    order: 2;*/
+    /*}*/
 }
 @media (max-width: 600px) {
+    .flex-container {
+        display: unset;
+    }
     .for-sp {
         display: block;
     }
@@ -580,7 +584,13 @@
     .about-2-section__container {
         padding-left: 0;
     }
-
+    .btn {
+        padding-top: 20px;
+    }
+    .bottom-div-image {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
     .top-section__background {
         background-image: url("../img/mask-group-11-1x-png@1x.png");
         /*background-color: #f1f8ff;*/
@@ -611,7 +621,7 @@
 
     .header-section {
         padding-top: 40px;
-        height: unset;
+        height: 800px;
     }
     .top-section__title-1, .top-section__title-2, .top-section__title-3 {
         font-size: 18px;

@@ -892,7 +892,7 @@ a {
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
 .w3-row-padding > .w3-col {
-    padding: 0 8px;
+    padding: 0 16px;
 }
 .w3-container,
 .w3-panel {
