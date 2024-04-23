@@ -221,7 +221,6 @@ input:focus {
   --font-size-16xl: 2.188rem;
   --font-size-sm: 0.875rem;
   --font-size-3xl: 1.375rem;
-  --font-size-xl: 1.25rem;
   --font-size-lgi: 1.188rem;
   --font-size-xs: 0.75rem;
   --font-size-smi: 0.813rem;
@@ -289,6 +288,14 @@ input:focus {
 
 .notosansjp-bold-mine-shaft-36px {
   color: var(--mine-shaft);
+  font-family: var(--font-family-noto_sans_jp);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosansjp-bold-white-36px {
+  color: var(--white);
   font-family: var(--font-family-noto_sans_jp);
   font-size: var(--font-size-xxxl);
   font-style: normal;
