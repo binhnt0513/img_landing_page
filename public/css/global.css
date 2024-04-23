@@ -326,6 +326,14 @@ input:focus {
   font-weight: 400;
 }
 
+.notosansjp-bold-lochmara-14px {
+  color: var(--lochmara);
+  font-family: var(--font-family-noto_sans_jp);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* SCROLLBAR */
 [dark-scroll]::-webkit-scrollbar {
   width: 10px;
