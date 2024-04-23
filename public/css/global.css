@@ -316,6 +316,7 @@ input:focus {
   font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 700;
+  line-height: 2rem;
 }
 
 .notosansjp-normal-white-14px {
