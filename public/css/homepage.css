@@ -90,7 +90,6 @@
     gap: var(--gap-65xl);
 }
 
-.post-section__container-item-detail-desc,
 .merit-01 {
     position: relative;
     font-weight: 700;
@@ -100,12 +99,6 @@
 .merit-01 {
     cursor: pointer;
     white-space: pre-wrap;
-}
-
-.post-section__container-item-detail-desc {
-    font-size: var(--font-size-5xl);
-    color: var(--color-darkslategray);
-    line-height: 2.625rem;
 }
 
 .merit-01-parent {
@@ -134,6 +127,7 @@
 .post-section__container-item-detail-info {
     position: relative;
     font-size: var(--font-size-base);
+    font-family: var(--font-family-noto_sans_jp);
     line-height: 2.125rem;
     color: var(--color-darkslategray);
     display: inline-block;
@@ -692,6 +686,12 @@
     .slider-section__group {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .post-section__container-item-detail {
+        gap: 20px;
+    }
+    .post-section__container-item-detail-desc {
+        font-size: 20px;
     }
 }
 
