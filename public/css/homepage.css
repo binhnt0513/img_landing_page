@@ -566,6 +566,9 @@
     /*}*/
 }
 @media (max-width: 600px) {
+    body {
+        width: calc(100% + 1px);
+    }
     .flex-container {
         display: unset;
         padding-left: 16px;
