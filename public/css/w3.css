@@ -374,8 +374,8 @@ a {
 .w3-input {
     padding: 8px;
     display: block;
-    border: none;
-    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
     width: 100%;
 }
 .w3-select {
@@ -1202,6 +1202,18 @@ a {
 }
 .w3-padding-top-24 {
     padding-top: 24px !important;
+}
+.w3-padding-bot-64 {
+    padding-bottom: 64px !important;
+}
+.w3-padding-bot-48 {
+    padding-bottom: 48px !important;
+}
+.w3-padding-bot-32 {
+    padding-bottom: 32px !important;
+}
+.w3-padding-bot-24 {
+    padding-bottom: 24px !important;
 }
 .w3-left {
     float: left !important;
