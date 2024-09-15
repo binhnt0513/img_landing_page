@@ -1,6 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700,400");
 
+html {
+    scroll-behavior: smooth;
+}
 .pc {
     display: block;
 }
@@ -282,9 +285,10 @@ input:focus {
 .notosansjp-bold-tory-blue-24px {
     color: var(--tory-blue);
     font-family: var(--font-family-noto_sans_jp);
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     font-style: normal;
     font-weight: 700;
+    line-height: 2rem;
 }
 
 
