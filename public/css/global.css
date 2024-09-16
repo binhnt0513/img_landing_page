@@ -269,7 +269,7 @@ input:focus {
 .notosansjp-bold-lochmara-14px {
     color: var(--lochmara);
     font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     font-style: normal;
     font-weight: 700;
 }
