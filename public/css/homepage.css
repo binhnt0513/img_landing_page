@@ -795,6 +795,10 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     margin-top: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-shrink: 0;
 }
 
 .accordion-content {
