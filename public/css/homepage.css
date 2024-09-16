@@ -147,7 +147,7 @@
     width: 390px;
     display: flex;
     flex-direction: row;
-    padding: 18px 16px 18px 28px;
+    padding: 18px 16px 18px 48px;
     box-sizing: border-box;
     align-items: flex-end;
     gap: 27px;
@@ -308,7 +308,6 @@
 
 .header-section__detail-right > .top-img-1 {
     background-color: transparent;
-    height: 87px;
     object-fit: cover;
 }
 
@@ -856,7 +855,7 @@ input:checked ~ .accordion-content {
 .register-btn-sp {
     z-index: 9999;
     position: fixed;
-    bottom: 127px;
+    bottom: 60px;
     padding-bottom: 0 !important;
     padding-top: 0 !important;
 }
@@ -1218,6 +1217,7 @@ input:checked ~ .accordion-content {
 
     .l-footer {
         font-size: 13px;
+        padding-bottom: 60px;
     }
 }
 
