@@ -844,6 +844,7 @@ input:checked ~ .accordion-content {
     font-weight: 500;
     float: right;
     padding-left: 20px;
+    padding-right: 10px;
     font-size: var(--font-size-m);
     line-height: 2rem;
     white-space: normal;
