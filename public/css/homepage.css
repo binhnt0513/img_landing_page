@@ -151,6 +151,7 @@
     box-sizing: border-box;
     align-items: flex-end;
     gap: 27px;
+    line-height: 21px;
 }
 
 .group-div21 {
@@ -299,7 +300,7 @@
 .header-section__detail-right {
     display: grid;
     grid-auto-rows: max-content;
-    grid-gap: 20px;
+    grid-gap: 10px;
     text-align: center;
 }
 
@@ -862,6 +863,7 @@ input:checked ~ .accordion-content {
     position: fixed;
     bottom: 0px;
     font-size: 16px !important;
+    padding-bottom:  16px !important;
 }
 
 .register-btn-sp > .btn-1 {
