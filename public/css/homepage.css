@@ -317,7 +317,7 @@
 }
 .header-section__detail-right > .top-title-2 > span {
     text-decoration: underline solid var(--tango) 50%;
-    text-underline-offset: -10px;
+    text-underline-offset: -5px;
     text-decoration-skip-ink: none;
 }
 
