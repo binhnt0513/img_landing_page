@@ -311,9 +311,14 @@
     object-fit: cover;
 }
 
+.top-title-2 {
+    line-break: normal;
+    line-height: 2em;
+}
 .header-section__detail-right > .top-title-2 > span {
     text-decoration: underline solid var(--tango) 50%;
     text-underline-offset: -10px;
+    text-decoration-skip-ink: none;
 }
 
 .group-div172 {
@@ -747,7 +752,7 @@
     /*margin:0 auto;*/
 }
 
-.accordion > input[type=radio] {
+.accordion > input[type=checkbox] {
     position: absolute;
     opacity: 0;
     z-index: -1;
@@ -755,7 +760,6 @@
 
 .accordion {
     width: 100%;
-    color: white;
     overflow: hidden;
     margin-bottom: 16px;
     border-radius: 10px;
@@ -838,6 +842,13 @@ input:checked ~ .accordion-content {
     text-align: left;
     display: inline-block;
     margin-top: -6px;
+}
+.content-detail > ul {
+    list-style-type: decimal-leading-zero;
+    padding-left: 26px;
+}
+.content-detail > ul > li {
+    padding-left: 6px;
 }
 
 .question {
