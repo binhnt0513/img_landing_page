@@ -36,7 +36,7 @@
         </div>
         <div class="container top-container">
             <div class="grid-container">
-                <div class="flex-container">
+                <div class="flex-container top-container-padding">
                     <div class="group-title-1">
                         <div class="text_label-1 text_label">
                             シンプル企業サイト構築プラン！
@@ -44,39 +44,31 @@
                         <div class="rectangle"></div>
                     </div>
                 </div>
-                <div class="title-2">
+                <div class="title-2 top-container-padding">
                     <h1 class="text_label-2">便利<span class="font-size-56">な</span>更新機能<span class="font-size-56">も入って</span><br
                             class="for-sp"> 驚き<span class="font-size-56">の</span>低価格<span
                             class="font-size-56">を</span>実現 !</h1>
                 </div>
-                <div class="title-3">
+                <div class="title-3 top-container-padding">
                     <h1 class="text_label-3">IMG-PKG</h1>
                     <img class="img" src="./public/img/section1-title-flag.png" alt=""/>
                 </div>
-                <div class="title-4">
+                <div class="title-4 top-container-padding">
                     <img class="img" src="./public/img/section1-img1.png" alt="">
                     <img class="img" src="./public/img/section1-img2.png" alt="">
                     <img class="img" src="./public/img/section1-img3.png" alt="">
                     <img class="img" src="./public/img/section1-img4.png" alt="">
                 </div>
                 <div class="title-5">
-                    <div class="forpc">
-                        <h2 class="text_label-5">必要なモノを全部まとめたお得なプラン</h2>
-                    </div>
-                    <div class="for-sp">
-                        <p class="text_label-5">必要なモノを</p><br>
-                        <p class="text_label-5">全部まとめたお得なプラン</p>
-                    </div>
+                    <img src="./public/img/badge_pc.png" class="forpc">
+                    <img src="./public/img/badge_sp.png" class="for-sp">
                 </div>
-                <div class="forpc" style="text-align: center">
+                <div class="forpc top-container-padding" style="text-align: center">
                     <a href="#form-1" class="btn btn-gold-large btn-gold" target="">無料相談はこちら！</a>
                 </div>
-                <div class="forpc" style="text-align: center">
+                <div class="forpc top-container-padding" style="text-align: center">
                     <a href="#form-2" class="btn btn-clear" target="">資料請求はこちら！</a>
                 </div>
-            </div>
-            <div class="orange-label">
-                <img src="./public/img/section1-icon1.png" alt="">
             </div>
         </div>
 
@@ -153,7 +145,7 @@
                     </div>
                     <h2 class="group-label">お気軽にご相談ください！</h2>
                     <div>
-                        <a href="#" target="_blank" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
+                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
                     </div>
                     <div>
                         <a href="#form-2" target="" class="btn btn-clear">資料請求はこちら</a>
@@ -381,7 +373,7 @@
                     </div>
                     <h2 class="group-label">お気軽にご相談ください！</h2>
                     <div>
-                        <a href="#" target="_blank" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
+                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
                     </div>
                     <div>
                         <a href="#form-2" target="" class="btn btn-clear">資料請求はこちら</a>
@@ -437,7 +429,7 @@
                            placeholder="有限会社アイエムジーフロー">
                 </div>
                 <div class="form-item">
-                    <label for="field3" class="form-item-label">お名前</label>
+                    <label for="field3" class="form-item-label">お名前<span class="label-require">※</span></label>
                     <input type="text" id="field3" name="field3" class="form-item-input" placeholder="山田　太郎">
                 </div>
                 <div class="form-item">
@@ -449,7 +441,7 @@
                     <input type="text" id="field5" name="field5" class="form-item-input" placeholder="070-0000-0000">
                 </div>
                 <div class="form-item">
-                    <label for="field6" class="form-item-label">メールアドレス</label>
+                    <label for="field6" class="form-item-label">メールアドレス<span class="label-require">※</span></label>
                     <input type="text" id="field6" name="field6" class="form-item-input"
                            placeholder="img-flow＠img-flow.com">
                 </div>
@@ -461,10 +453,11 @@
                 <div class="form-item">
                     <label for="field8" class="form-item-label"><a
                             class="text-underline" href="https://img-flow.com/privacy/" target="_blank">個人情報保護方針</a><span
-                            class="label-require">※</span></label>
+                            class="label-require forpc">※</span></label>
                     <div class="checkbox">
                         <input type="checkbox" id="field8" name="field8" class="checkbox-note"><label
-                            for="field8">同意する</label>
+                            for="field8">同意する<span
+                            class="label-require for-sp">※</span></label>
                     </div>
                 </div>
                 <div class="form-item-action">
@@ -492,7 +485,7 @@
                            placeholder="有限会社アイエムジーフロー">
                 </div>
                 <div class="form-item">
-                    <label for="field23" class="form-item-label">お名前</label>
+                    <label for="field23" class="form-item-label">お名前<span class="label-require">※</span></label>
                     <input type="text" id="field23" name="field3" class="form-item-input" placeholder="山田　太郎">
                 </div>
                 <div class="form-item">
@@ -504,17 +497,18 @@
                     <input type="text" id="field25" name="field5" class="form-item-input" placeholder="070-0000-0000">
                 </div>
                 <div class="form-item">
-                    <label for="field26" class="form-item-label">メールアドレス</label>
+                    <label for="field26" class="form-item-label">メールアドレス<span class="label-require">※</span></label>
                     <input type="text" id="field26" name="field6" class="form-item-input"
                            placeholder="img-flow＠img-flow.com">
                 </div>
                 <div class="form-item">
                     <label for="field28" class="form-item-label"><a
                             class="text-underline" href="https://img-flow.com/privacy/" target="_blank">個人情報保護方針</a><span
-                            class="label-require">※</span></label>
+                            class="label-require forpc">※</span></label>
                     <div class="checkbox">
                         <input type="checkbox" id="field28" name="field28" class="checkbox-note"><label
-                            for="field28">同意する</label>
+                            for="field28">同意する<span
+                            class="label-require for-sp">※</span></label>
                     </div>
                 </div>
                 <div class="form-item-action">
