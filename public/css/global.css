@@ -1,9 +1,52 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700,400");
 
+@font-face {
+    font-family: 'Senobi Gothic';
+    src: url('../fonts/Senobi-Gothic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SenobiGothic-Medium';
+    src: url('../fonts/Senobi-Gothic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SenobiGothic-Bold';
+    src: url('../fonts/Senobi-Gothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HiraginoKaku Gothic Pro-W3";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/hirakinojiao-ko-pr6n-w3.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "NotoSans CJK JP-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/notosanscjkjp-bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: "HiraginoKaku Gothic ProN-W3";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/noto-sans-condensed-light-italic-nerd-font-complete-mono-windows-compatible.ttf') format("truetype");
+}
+
 html {
     scroll-behavior: smooth;
 }
+
 .pc {
     display: block;
 }
@@ -92,233 +135,145 @@ input:focus {
 }
 
 :root {
-    --lochmara: #0176bb;
-    --mine-shaft: #2f302f;
-    --white: #ffffff;
-
-    --font-size-l: 18px;
-    --font-size-m: 16px;
-    --font-size-s: 14px;
-    --font-size-xl: 24px;
-    --font-size-xxl: 26px;
-    --font-size-xxxl: 36px;
-    --font-size-xxxxl: 40px;
-
-    --font-family-mplus1c-bold: "M+1c-bold", Helvetica;
-    --font-family-noto_sans_jp: "Noto Sans JP", Helvetica;
-    /* Colors */
-    --color-white: #fff;
-    --color-yellowgreen: #76bd34;
-    --color-maroon: #5b1300;
-    --color-steelblue: #0176bb;
-    --color-darkslategray: #2f302f;
-    --color-red: #e50000;
-    --color-yellow: #ffff30;
-    --color-whitesmoke: #f7f7f7;
-    --aqua-pearl: #63b3db;
+    --azure-radiance: #0086e7;
+    --dark-blue: #0266AE;
     --black: #000000;
+    --blue-charcoal: #010a28;
     --celeste: #cfcfcf;
-    --crusta: #f17b2e;
-    --denim: #2483c5;
-    --denim-2: #2c6eb0;
-    --dove-gray: #707070;
-    --fiord: #415763;
-    --limed-spruce: #37474f;
-    --mercury: #e6e6e6;
-    --picton-blue: #30aaee;
-    --quill-gray: #d5d5d5;
-    --scarlet: #ee1313;
-    --shark: #292929;
-    --tango: #ec711e;
-    --tango-2: #ed7321;
-    --tory-blue: #144f90;
-    --zircon: #f2f9ff;
-    --zircon-2: #f5f8fb;
-
-    /* Gaps */
-    --gap-xl: 1.25rem;
-    --gap-31xl: 3.125rem;
-    --gap-65xl: 5.25rem;
-    --gap-11xl: 1.875rem;
-    --gap-3xs: 0.625rem;
-    --gap-8xs: 0.312rem;
-    --gap-5xs: 0.5rem;
-    --gap-21xl: 2.5rem;
-
-    /* Border radiuses */
-    --br-8xs: 5px;
-    --br-9xs: 4px;
-    --br-10xs: 3px;
-    --br-3xs: 10px;
+    --cyan--aqua: #00d4ff;
+    --gold: #ffd500;
+    --link-water: #d8e8f4;
+    --malibu: #6cccff;
+    --neon-carrot: #ff9831;
+    --regal-blue: #004374;
+    --shady-lady: #aaaaaa;
+    --white: #ffffff;
+    --font-size-l: 19px;
+    --font-size-m: 18px;
+    --font-size-s: 16px;
+    --font-size-xl: 24px;
+    --font-size-xs: 12px;
+    --font-size-xxl: 36px;
+    --font-size-xxxl: 40px;
+    --font-family-hiraginokaku_gothic_pro-w3: "HiraginoKaku Gothic Pro-W3", Helvetica;
+    --font-family-hiraginokaku_gothic_pro-w6: "HiraginoKaku Gothic Pro-W6", Helvetica;
+    --font-family-hiraginokaku_gothic_pron-w3: "HiraginoKaku Gothic ProN-W3", Helvetica;
+    --font-family-noto_sans_jp: "Noto Sans JP", Helvetica;
+    --font-family-notosans_cjk_jp-bold: "NotoSans CJK JP-Bold", Helvetica;
+    --font-family-senobi_gothic: "Senobi Gothic", Helvetica;
+    --font-family-senobigothic-bold: "SenobiGothic-Bold", Helvetica;
+    --font-family-senobigothic-medium: "SenobiGothic-Medium", Helvetica;
 }
 
 
-.notosansjp-normal-mine-shaft-16px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
-}
-
-.notosansjp-normal-mine-shaft-18px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 400;
-}
-
-.notosansjp-bold-mine-shaft-18px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-mine-shaft-36px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xxxl);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-mine-shaft-40px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xxxxl);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-black-14px {
-    color: var(--black);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-s);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-black-16px {
-    color: var(--black);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-white-20px {
-    color: var(--white);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-white-28px {
-    color: var(--white);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-white-34px {
-    color: var(--white);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xxxl);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-white-36px {
-    color: var(--white);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xxxl);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.m1c-bold-lochmara-18px {
-    color: var(--lochmara);
-    font-family: var(--font-family-mplus1c-bold);
-    font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-mine-shaft-24px {
-    color: var(--mine-shaft);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2rem;
-}
-
-.notosansjp-normal-white-14px {
-    color: var(--white);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-s);
-    font-style: normal;
-    font-weight: 400;
-}
-
-.notosansjp-bold-lochmara-14px {
-    color: var(--lochmara);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-s);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-tory-blue-20px {
-    color: var(--tory-blue);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 700;
-}
-
-.notosansjp-bold-tory-blue-24px {
-    color: var(--tory-blue);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2rem;
+* {
+    box-sizing: border-box;
 }
 
 
-.notosansjp-bold-tory-blue-42px {
-    color: var(--tory-blue);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-}
-.notosansjp-bold-picton-blue-42px {
-    color: var(--picton-blue);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
+.forpc {
+    display: block;
 }
 
-.notosansjp-normal-shark-16px {
-    color: var(--shark);
-    font-family: var(--font-family-noto_sans_jp);
-    font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
+.for-sp {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .header-container {
+        max-width: 1460px;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*margin-right: -15px;*/
+    /*margin-left: -15px;*/
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .text-underline {
     text-decoration: underline;
     text-underline-offset: 0.5em;
 }
+
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+}
+
 /* SCROLLBAR */
 [dark-scroll]::-webkit-scrollbar {
     width: 10px;
@@ -361,9 +316,19 @@ input:focus {
     border-right: solid 15px transparent;
 }
 
-.highlight-orange {
-    color: var(--tango);
+.text-left {
+    text-align: left !important;
 }
-.highlight-blue {
-    color: var(--picton-blue);
+
+.text-center {
+    text-align: center !important;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
