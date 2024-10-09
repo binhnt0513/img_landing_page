@@ -756,7 +756,9 @@
     .group-content-1, .group-content-3 {
         flex-direction: column;
     }
-
+    .section-2 .group-col .text-detail {
+        order: 3;
+    }
     .section-2 .group-col .flex-container {
         order: 2;
     }
@@ -948,6 +950,9 @@
         max-width: 240px;
     }
 
+    .section-2 .group-col .text-detail {
+        order: 3;
+    }
     .section-2 .group-col .flex-container {
         order: 2;
     }
