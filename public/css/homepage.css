@@ -631,7 +631,7 @@
     font-weight: 700;
     height: 46px;
     letter-spacing: 0.00px;
-    line-height: 32px;
+    line-height: 1;
     text-align: center;
 }
 
@@ -642,7 +642,7 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.00px;
-    line-height: 27px;
+    line-height: 1.5;
     padding-bottom: 30px;
 }
 
@@ -961,6 +961,8 @@
 
     .triangle-under-field {
         max-width: 240px;
+        line-height: 1.2;
+        padding: 10px;
     }
 
     .section-2 .group-col .text-detail {
@@ -981,6 +983,12 @@
     .btn-orange {
         width: 100%;
         height: unset;
+    }
+    .distributor-title {
+        font-size: 24px;
+    }
+    .distributor-desc {
+        font-size: 14px;
     }
 }
 
