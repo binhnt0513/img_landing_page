@@ -966,7 +966,7 @@
 
     .btn-orange {
         width: 100%;
-        height: 55px;
+        height: unset;
     }
 }
 
@@ -1196,5 +1196,11 @@
 
     .form-group {
         gap: 10px;
+    }
+    .btn-gold-medium {
+        line-height: 1;
+    }
+    .btn-orange {
+        line-height: 1.5;
     }
 }
