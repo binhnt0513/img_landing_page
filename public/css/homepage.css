@@ -209,13 +209,15 @@
 .section-1 .title-5 {
     display: flex;
     justify-content: center;
-    z-index: 99;
 }
 
 .section-1 .title-5 img {
     transform: translate(10%, -35%);
     margin-bottom: -15%;
     width: 90%;
+}
+.section-1 .top-btn {
+    z-index: 99;
 }
 
 
@@ -239,6 +241,7 @@
     font-family: var(--font-family-senobi_gothic);
     font-size: var(--font-size-xxxl);
     font-weight: 700;
+    line-height: 1.5;
 }
 
 .sub-group-label {
@@ -342,6 +345,8 @@
 
 .group-content-3 {
     text-align: left;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .group-col {
