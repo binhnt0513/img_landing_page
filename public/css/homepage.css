@@ -1210,6 +1210,7 @@
     .header-container {
         position: fixed;
         z-index: 1001;
+        max-width: unset !important;
     }
 
     .top-container {
