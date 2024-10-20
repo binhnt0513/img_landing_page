@@ -213,13 +213,13 @@ input:focus {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1200px;
     }
 }
 
 @media (min-width: 1920px) {
     .container {
-        max-width: 1280px;
+        max-width: 1200px;
     }
 
     .header-container {

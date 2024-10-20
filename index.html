@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="./public/css/global.css">
     <link rel="stylesheet" href="./public/css/homepage.css">
     <link rel="stylesheet" href="./public/css/layout.css">
+    <script src="./public/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <main>
-    <div class="section section-1">
+    <div class="section section-1" id="section-1">
         <div class="container header-container">
             <div class="row">
                 <div class="header">
@@ -28,8 +29,10 @@
                     <div class="forpc">
                         <a href="#form-1" class="btn btn-gold" target="">無料相談</a>
                     </div>
-                    <div class="for-sp">
-                        <img src="public/img/section1-menu-icon.png" alt="">
+                    <div class="for-sp menu-btn" id="menuBtn" onclick="toggleMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
                 </div>
             </div>
@@ -73,9 +76,9 @@
         </div>
 
     </div>
-    <div class="section section-2">
-        <div class="container fist-container">
-            <h2 class="group-label">このような<span class="text-color-aqua">お悩み</span>ありませんか？</h2>
+    <div class="section section-2" id="section-2">
+        <div class="container fist-container" id="menu-1">
+            <h2 class="group-label">このような<span class="text-color-aqua">お悩み</span><br class="for-sp">ありませんか？</h2>
             <div class="group-content-1">
                 <div class="grid-col">
                     <div class="item">
@@ -103,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="menu-2">
             <h2 class="group-label text-left sub-group-label"><span class="text-color-aqua">IMG</span>-PKG Liteとは？</h2>
             <div class="rectangle"></div>
             <p class="group-content-2">
@@ -145,7 +148,7 @@
                     </div>
                     <h2 class="group-label">お気軽にご相談ください！</h2>
                     <div>
-                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
+                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問合せ</a>
                     </div>
                     <div>
                         <a href="#form-2" target="" class="btn btn-clear">資料請求はこちら</a>
@@ -153,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="menu-3">
             <div class="group-content-5">
                 <h2 class="group-label">IMG-PKG Liteの中身！</h2>
                 <div class="margin-center">
@@ -176,13 +179,13 @@
                             <th class="col-1">ページデザイン</th>
                             <th class="col-2">
                                 <p>〇</p>
-                                <p>追加ページ １ページ / 5万円 (税別)</p>
+                                <p>追加ページ<br class="for-sp"> １ページ / 5万円 (税別)</p>
                             </th>
                         </tr>
                         <tr class="table-row">
                             <th class="col-1">事業概要</th>
                             <th class="col-2">
-                                <p>5つまで掲載可能 それぞれ画像１枚まで</p>
+                                <p>5つまで掲載可能<br class="for-sp"> それぞれ画像１枚まで</p>
                                 <p class="note">※詳細ページなし</p>
                             </th>
                         </tr>
@@ -238,8 +241,8 @@
             </div>
         </div>
     </div>
-    <div class="section section-3">
-        <div class="container">
+    <div class="section section-3" id="section-3">
+        <div class="container" id="menu-4">
             <div class="group-content-7">
                 <h2 class="group-label">相談から納品までの<span class="text-color-aqua">流れ</span></h2>
                 <div class="margin-center">
@@ -373,7 +376,7 @@
                     </div>
                     <h2 class="group-label">お気軽にご相談ください！</h2>
                     <div>
-                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問い合わせ</a>
+                        <a href="#form-1" target="" class="btn btn-gold btn-gold-medium">お問合せ</a>
                     </div>
                     <div>
                         <a href="#form-2" target="" class="btn btn-clear">資料請求はこちら</a>
@@ -404,7 +407,7 @@
             </div>
         </div>
     </div>
-    <div class="section section-4">
+    <div class="section section-4" id="section-4">
         <div class="container">
             <div class="group-content-9">
                 <h2 class="group-label">お問合せフォーム</h2>
@@ -421,6 +424,9 @@
                     <label for="field1" class="form-item-label">お問合せ項目<span class="label-require">※</span> </label>
                     <select id="field1" name="field1" class="form-item-input">
                         <option value="選択してください" selected>選択してください</option>
+                        <option value="制作依頼">制作依頼</option>
+                        <option value="見積依頼">見積依頼</option>
+                        <option value="その他">その他</option>
                     </select>
                 </div>
                 <div class="form-item">
@@ -466,7 +472,7 @@
             </div>
         </div>
     </div>
-    <div class="section section-5">
+    <div class="section section-5" id="section-5">
         <div class="container">
             <div class="group-content-9">
                 <h2 class="group-label">資料請求フォーム</h2>
@@ -522,7 +528,7 @@
         <div class="link">
             <div class="footer-logo"><img src="./public/img/footer-logo.png" alt=""></div>
             <div class="external-link">
-                <div><a href="#" target="_blank">運営会社情報はこちら</a></div>
+                <div><a href="https://img-flow.com/company/" target="_blank">運営会社情報はこちら</a></div>
                 <div class="vertical-line">
                 </div>
                 <div><a href="https://img-flow.com/privacy/" target="_blank">プライバシーポリシー</a></div>
@@ -532,8 +538,18 @@
     <div class="for-sp">
         <div class="register-btn-sp">
             <a class="btn btn-gold btn-gold-fullwidth" href="#form-1">
-                無料ご相談はこちら！
+                無料相談はこちら！
             </a>
+        </div>
+    </div>
+    <div id="sideMenu" class="side-menu">
+        <a class="menu-link" href="#menu-1" onclick="navigateToSection(event)">このようなお悩みありませんか？</a>
+        <a class="menu-link" href="#menu-2" onclick="navigateToSection(event)">IMG-PKG Liteとは？</a>
+        <a class="menu-link" href="#menu-3" onclick="navigateToSection(event)">IMG-PKG Liteの中身</a>
+        <a class="menu-link" href="#menu-4" onclick="navigateToSection(event)">相談から納品までの流れ</a>
+        <a class="menu-link" href="#form-1" onclick="navigateToSection(event)">資料請求</a>
+        <div class="menu-btn">
+            <a href="#form-1" class="btn btn-gold" onclick="navigateToSection(event)">無料相談</a>
         </div>
     </div>
 </main>
